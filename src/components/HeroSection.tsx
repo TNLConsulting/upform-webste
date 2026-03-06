@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import studioPhoto from "@/assets/studio-photo.jpg";
+import studioPhoto from "@/assets/hero-studio.jpg";
 
 const HeroSection = () => {
   return (
@@ -9,12 +9,7 @@ const HeroSection = () => {
         <img
           src={studioPhoto}
           alt="Upform Studio — reformer pilates studio interieur"
-          className="absolute w-auto h-auto min-w-full min-h-full max-w-none object-cover"
-          style={{
-            imageOrientation: "from-image",
-            transform: "rotate(90deg) scale(1.8)",
-            transformOrigin: "center center",
-          }}
+          className="w-full h-full object-cover"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
