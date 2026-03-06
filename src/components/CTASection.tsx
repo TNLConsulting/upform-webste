@@ -9,6 +9,7 @@ const CTASection = () => {
           src={studioPhoto}
           alt="Upform Studio sfeerbeeld"
           className="w-full h-full object-cover"
+          style={{ imageOrientation: "from-image" }}
           loading="lazy"
         />
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />

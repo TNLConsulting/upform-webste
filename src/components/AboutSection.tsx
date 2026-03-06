@@ -71,6 +71,7 @@ const AboutSection = () => {
                 src={reformerDetail}
                 alt="Reformer pilates machine in Upform Studio"
                 className="w-full aspect-[3/4] object-cover"
+                style={{ imageOrientation: "from-image" }}
                 loading="lazy"
               />
             </div>
@@ -79,6 +80,7 @@ const AboutSection = () => {
                 src={pilatesAction}
                 alt="Reformer pilates sessie bij Upform Studio"
                 className="w-full aspect-[3/4] object-cover"
+                style={{ imageOrientation: "from-image" }}
                 loading="lazy"
               />
             </div>

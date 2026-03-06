@@ -10,6 +10,7 @@ const HeroSection = () => {
           src={studioPhoto}
           alt="Upform Studio — reformer pilates studio interieur"
           className="w-full h-full object-cover"
+          style={{ imageOrientation: "from-image" }}
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
