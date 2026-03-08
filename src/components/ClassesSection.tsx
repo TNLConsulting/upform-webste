@@ -96,7 +96,7 @@ const ClassesSection = () => {
             Neem contact met ons op en we plannen het samen in.
           </p>
           <a
-            href="mailto:info@uprise.be"
+            href="mailto:info@upform.be"
             className="inline-block px-8 py-3 border border-primary text-primary font-sans-body text-sm tracking-[0.15em] uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           >
             Contacteer Ons

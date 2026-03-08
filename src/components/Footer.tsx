@@ -76,8 +76,8 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 font-sans-body text-sm text-muted-foreground">
               <li>
-                <a href="mailto:info@uprise.be" className="hover:text-primary transition-colors">
-                  info@uprise.be
+                <a href="mailto:info@upform.be" className="hover:text-primary transition-colors">
+                  info@upform.be
                 </a>
               </li>
               <li className="flex items-start gap-2">
