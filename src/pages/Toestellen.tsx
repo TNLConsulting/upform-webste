@@ -166,7 +166,7 @@ const Toestellen = () => {
               inclusief eventuele kleur- en afwerkingsopties.
             </p>
             <a
-              href="mailto:info@upform.be"
+              href="mailto:tom@upform.be"
               className="inline-flex items-center gap-3 px-10 py-4 bg-primary text-primary-foreground font-sans-body text-sm tracking-[0.2em] uppercase hover:bg-primary/90 transition-all duration-300 glow-gold"
             >
               Vraag een Offerte Aan
@@ -251,7 +251,7 @@ const Toestellen = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:info@upform.be"
+                href="mailto:tom@upform.be"
                 className="px-10 py-4 bg-primary text-primary-foreground font-sans-body text-sm tracking-[0.2em] uppercase hover:bg-primary/90 transition-all duration-300 glow-gold"
               >
                 Maak een Afspraak
