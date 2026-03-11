@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const plans = [
-  { sessions: "1", price: "22", per: "sessie", label: "Eén sessie" },
-  { sessions: "5", price: "100", per: "€20/sessie", label: "5 beurtenkaart" },
-  { sessions: "10", price: "180", per: "€18/sessie", label: "10 beurtenkaart", popular: true },
-  { sessions: "25", price: "425", per: "€17/sessie", label: "25 beurtenkaart" },
+  { sessions: "1", price: "22", per: "sessie", label: "Eén sessie", link: "https://uprise.sportbitapp.nl/web/be/registreren/lidmaatschap?r=9" },
+  { sessions: "5", price: "100", per: "€20/sessie", label: "5 beurtenkaart", link: "https://uprise.sportbitapp.nl/web/be/registreren/lidmaatschap?r=10" },
+  { sessions: "10", price: "180", per: "€18/sessie", label: "10 beurtenkaart", popular: true, link: "https://uprise.sportbitapp.nl/web/be/registreren/lidmaatschap?r=11" },
+  { sessions: "25", price: "425", per: "€17/sessie", label: "25 beurtenkaart", link: "https://uprise.sportbitapp.nl/web/be/registreren/lidmaatschap?r=12" },
 ];
 
 const PricingSection = () => {
@@ -54,7 +54,7 @@ const PricingSection = () => {
               </div>
               <p className="font-sans-body text-sm text-primary mb-8">{plan.per}</p>
               <a
-                href="https://uprise.sportbitapp.nl/web/be/registreren/lidmaatschap"
+                href={plan.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-auto px-6 py-3 font-sans-body text-sm tracking-[0.15em] uppercase transition-all duration-300 ${
