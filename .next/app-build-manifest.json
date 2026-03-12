@@ -1,0 +1,45 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-4bf5637f5c57ba1c.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faf846ba24294955.js",
+      "static/chunks/app/_not-found/page-f187ad254cc1b0eb.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack-4bf5637f5c57ba1c.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faf846ba24294955.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/not-found-8a7174bc0019f39d.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-4bf5637f5c57ba1c.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faf846ba24294955.js",
+      "static/css/1b0180155abe9a0b.css",
+      "static/chunks/424-d46336649ba6f655.js",
+      "static/chunks/app/layout-df8b72e0dd0a0d54.js"
+    ],
+    "/toestellen/page": [
+      "static/chunks/webpack-4bf5637f5c57ba1c.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faf846ba24294955.js",
+      "static/chunks/12-f8d79b1c80f1fd01.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/toestellen/page-bc3b2a437833a06d.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-4bf5637f5c57ba1c.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-ebd51be49873d76c.js",
+      "static/chunks/main-app-faf846ba24294955.js",
+      "static/chunks/12-f8d79b1c80f1fd01.js",
+      "static/chunks/app/page-99ddc680c72294c7.js"
+    ]
+  }
+}
