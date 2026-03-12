@@ -89,9 +89,13 @@ const Footer = () => {
                     href="https://maps.google.com/?q=Stationsstraat+96,+3150+Haacht"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block text-xs text-primary/70 hover:text-primary transition-colors mt-1 tracking-wide"
+                    className="inline-flex items-center gap-1.5 text-xs text-primary/70 hover:text-primary transition-colors mt-1 tracking-wide"
                   >
-                    Bekijk op Maps →
+                    <svg width="12" height="16" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 22 12 22S24 21 24 12C24 5.373 18.627 0 12 0z" fill="#EA4335"/>
+                      <circle cx="12" cy="12" r="5" fill="white"/>
+                    </svg>
+                    Bekijk op Maps
                   </a>
                 </div>
               </li>
