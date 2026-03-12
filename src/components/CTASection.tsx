@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import studioPhoto from "@/assets/studio-photo.jpg";
 
@@ -6,7 +7,7 @@ const CTASection = () => {
     <section className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={studioPhoto}
+          src={studioPhoto.src}
           alt="Upform Studio sfeerbeeld"
           className="w-full h-full object-cover"
           style={{ imageOrientation: "from-image" }}

@@ -1,3 +1,5 @@
+'use client';
+import Link from 'next/link';
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,7 +21,7 @@ const reformerImages = [
 const features = [
   "Gebouwd voor dagelijks intensief professioneel gebruik",
   "Strak minimalistisch design met duurzame materialen",
-  "Soepele, stille loop — ideaal voor studio's en trainers",
+  "Soepele, stille loop — ideaal voor studio&#39;s en trainers",
   "Personaliseerbaar in kleur en afwerking",
   "Belgische expertise, Europese levering",
   "Eén model, perfect uitgewerkt — geen compromissen",
@@ -73,7 +75,7 @@ const Toestellen = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="font-sans-body text-lg text-muted-foreground max-w-xl mx-auto font-light"
           >
-            Professionele pilates reformers voor studio's en trainers die geen compromissen sluiten.
+            Professionele pilates reformers voor studio&#39;s en trainers die geen compromissen sluiten.
           </motion.p>
         </div>
       </section>
@@ -256,12 +258,12 @@ const Toestellen = () => {
               >
                 Maak een Afspraak
               </a>
-              <a
+              <Link
                 href="/#about"
                 className="px-10 py-4 border border-primary/30 text-foreground font-sans-body text-sm tracking-[0.2em] uppercase hover:border-primary hover:text-primary transition-all duration-300"
               >
                 Meer over de Studio
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

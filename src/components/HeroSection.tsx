@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import studioPhoto from "@/assets/hero-studio.jpg";
 
@@ -7,7 +8,7 @@ const HeroSection = () => {
       {/* Background — actual studio photo */}
       <div className="absolute inset-0">
         <img
-          src={studioPhoto}
+          src={studioPhoto.src}
           alt="Upform Studio — reformer pilates studio interieur"
           className="w-full h-full object-cover"
           loading="eager"

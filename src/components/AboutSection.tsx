@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import reformerDetail from "@/assets/reformer-detail.jpg";
 import pilatesAction from "@/assets/pilates-action.jpg";
@@ -68,7 +69,7 @@ const AboutSection = () => {
           >
             <div className="space-y-4">
               <img
-                src={reformerDetail}
+                src={reformerDetail.src}
                 alt="Reformer pilates machine in Upform Studio"
                 className="w-full aspect-[3/4] object-cover"
                 style={{ imageOrientation: "from-image" }}
@@ -77,7 +78,7 @@ const AboutSection = () => {
             </div>
             <div className="pt-8 space-y-4">
               <img
-                src={pilatesAction}
+                src={pilatesAction.src}
                 alt="Reformer pilates sessie bij Upform Studio"
                 className="w-full aspect-[3/4] object-cover"
                 style={{ imageOrientation: "from-image" }}
