@@ -1,21 +1,11 @@
 'use client';
 import { motion } from "framer-motion";
 
-const classes = [
-  {
-    title: "Basic",
-    subtitle: "Alle niveaus",
-    description:
-      "Focus op het leren kennen van de reformer en de basisoefeningen. Ook geschikt voor wie al ervaring heeft — optimaliseer je techniek of krijg opties naar moeilijkere varianten.",
-    features: ["Kennismaking met de reformer", "Basisoefeningen & techniek", "Opties naar hoger niveau", "Max. 8 personen"],
-  },
-  {
-    title: "Intermediate",
-    subtitle: "Ervaren",
-    description:
-      "Je bent vertrouwd met de reformer en basisoefeningen. We gaan een stap verder met geavanceerde oefeningen en uitdagendere varianten.",
-    features: ["Geavanceerde oefeningen", "Meer uitdaging & intensiteit", "Persoonlijke varianten", "Max. 8 personen"],
-  },
+const features = [
+  "Toegankelijk voor absolute beginners én gevorderden",
+  "Persoonlijke begeleiding in kleine groepen van max. 8 personen",
+  "Techniek en uitdaging op jouw niveau",
+  "50 minuten intensieve, doordachte sessie",
 ];
 
 const ClassesSection = () => {
@@ -38,45 +28,39 @@ const ClassesSection = () => {
           <div className="w-16 h-px line-gold mx-auto" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-          {classes.map((cls, i) => (
-            <motion.div
-              key={cls.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              className="bg-gradient-card border border-gold p-8 md:p-10 flex flex-col"
-            >
-              <p className="font-sans-body text-xs tracking-[0.3em] uppercase text-primary mb-2">
-                {cls.subtitle}
-              </p>
-              <h3 className="font-serif-display text-3xl md:text-4xl font-light text-foreground mb-4">
-                {cls.title}
-              </h3>
-              <div className="w-10 h-px line-gold mb-6" />
-              <p className="font-sans-body text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
-                {cls.description}
-              </p>
-              <ul className="space-y-3 mb-8">
-                {cls.features.map((f) => (
-                  <li key={f} className="flex items-center gap-3 text-sm text-foreground/80">
-                    <span className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="https://uprise.sportbitapp.nl/web/be/registreren/lidmaatschap"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto px-6 py-3 border border-primary/30 text-primary font-sans-body text-sm tracking-[0.15em] uppercase text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-              >
-                Boek Les
-              </a>
-            </motion.div>
-          ))}
-        </div>
+        {/* Single class card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-3xl mx-auto bg-gradient-card border border-gold p-10 md:p-14 mb-12"
+        >
+          <p className="font-sans-body text-xs tracking-[0.3em] uppercase text-primary mb-3 text-center">
+            Voor iedereen
+          </p>
+          <h3 className="font-serif-display text-4xl md:text-5xl font-light text-foreground mb-4 text-center">
+            Reformer Pilates
+          </h3>
+          <div className="w-16 h-px line-gold mx-auto mb-8" />
+          <p className="font-sans-body text-muted-foreground leading-relaxed mb-4 text-center max-w-xl mx-auto">
+            Onze lessen zijn ontworpen voor <span className="text-foreground">elk niveau</span> — of je nu 
+            nooit op een reformer hebt gestaan of al jarenlang traint. Elke oefening wordt aangeboden 
+            met varianten, zodat jij precies op jouw tempo en capaciteit werkt.
+          </p>
+          <p className="font-sans-body text-muted-foreground leading-relaxed mb-10 text-center max-w-xl mx-auto">
+            Je hoeft geen ervaring te hebben. Je hoeft niet fit te zijn om te beginnen. 
+            Je hebt alleen de wil nodig om je lichaam beter te leren kennen — de rest doen wij.
+          </p>
+          <ul className="space-y-4 max-w-md mx-auto">
+            {features.map((f) => (
+              <li key={f} className="flex items-start gap-3 text-sm text-foreground/80 font-sans-body">
+                <span className="w-1 h-1 rounded-full bg-primary flex-shrink-0 mt-2" />
+                {f}
+              </li>
+            ))}
+          </ul>
+        </motion.div>
 
         {/* Private lessons callout */}
         <motion.div
@@ -84,7 +68,7 @@ const ClassesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto bg-gradient-card border border-gold p-8 md:p-10 text-center"
+          className="max-w-3xl mx-auto bg-gradient-card border border-gold p-8 md:p-10 text-center"
         >
           <p className="font-sans-body text-xs tracking-[0.3em] uppercase text-primary mb-3">
             Op maat
@@ -92,16 +76,10 @@ const ClassesSection = () => {
           <h3 className="font-serif-display text-2xl md:text-3xl font-light text-foreground mb-4">
             Privé Lessen — Solo, Duo of Trio
           </h3>
-          <p className="font-sans-body text-sm text-muted-foreground mb-6 max-w-lg mx-auto">
+          <p className="font-sans-body text-sm text-muted-foreground max-w-lg mx-auto">
             Wil je liever een volledig gepersonaliseerde sessie? Of een privé groepsles? 
             Neem contact met ons op en we plannen het samen in.
           </p>
-          <a
-            href="mailto:tom@upform.be"
-            className="inline-block px-8 py-3 border border-primary text-primary font-sans-body text-sm tracking-[0.15em] uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-          >
-            Contacteer Ons
-          </a>
         </motion.div>
       </div>
     </section>
