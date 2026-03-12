@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Upform Studio | Reformer Pilates bij Uprise in Haacht',
+  title: 'Upform Studio | Reformer Pilates in Haacht',
   description: 'Upform Studio in Haacht — professionele reformer pilates lessen voor beginners en gevorderden. Ontdek onze klassen, uurrooster en prijzen.',
   alternates: {
     canonical: 'https://upform.be',
