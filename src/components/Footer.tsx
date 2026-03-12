@@ -83,7 +83,17 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 text-primary flex-shrink-0" />
-                <span>Stationsstraat 96<br />3150 Haacht</span>
+                <div>
+                  <span>Stationsstraat 96<br />3150 Haacht</span>
+                  <a
+                    href="https://maps.google.com/?q=Stationsstraat+96,+3150+Haacht"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-xs text-primary/70 hover:text-primary transition-colors mt-1 tracking-wide"
+                  >
+                    Bekijk op Maps →
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
