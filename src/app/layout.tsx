@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import { ClientProviders } from '@/components/ClientProviders'
+import { CookieConsent } from '@/components/CookieConsent'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -26,18 +26,7 @@ export default function RootLayout({
         <ClientProviders>
           {children}
         </ClientProviders>
-        <Script id="crisp-chat" strategy="afterInteractive">{`
-          window.$crisp=[];
-          window.CRISP_WEBSITE_ID="0bfe6651-3755-4986-b1f3-cb05deb1412f";
-          window.CRISP_RUNTIME_CONFIG = { locale: "nl" };
-          (function(){
-            var d=document;
-            var s=d.createElement("script");
-            s.src="https://client.crisp.chat/l.js";
-            s.async=1;
-            d.getElementsByTagName("head")[0].appendChild(s);
-          })();
-        `}</Script>
+        <CookieConsent />
       </body>
     </html>
   )

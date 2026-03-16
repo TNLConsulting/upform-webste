@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/JZHYVliIjwSAVrm9Fa5b-/_buildManifest.js",
-    "static/JZHYVliIjwSAVrm9Fa5b-/_ssgManifest.js"
+    "static/QEA7oenP1tzBoRk8Nd8eo/_buildManifest.js",
+    "static/QEA7oenP1tzBoRk8Nd8eo/_ssgManifest.js"
   ],
   "rootMainFiles": [
     "static/chunks/webpack-4bf5637f5c57ba1c.js",
@@ -21,7 +21,7 @@
       "static/chunks/framework-a6e0b7e30f98059a.js",
       "static/chunks/main-76e23f08e5cbaef7.js",
       "static/chunks/61-2b06a65342cee448.js",
-      "static/chunks/pages/Index-0c7934e21deacb94.js"
+      "static/chunks/pages/Index-f1302d104803f3f5.js"
     ],
     "/Toestellen": [
       "static/chunks/webpack-4bf5637f5c57ba1c.js",
@@ -29,7 +29,7 @@
       "static/chunks/main-76e23f08e5cbaef7.js",
       "static/chunks/61-2b06a65342cee448.js",
       "static/chunks/924-f318c467d98b48c2.js",
-      "static/chunks/pages/Toestellen-bd81656ee7ec1511.js"
+      "static/chunks/pages/Toestellen-d636d35a2ffa5ec9.js"
     ],
     "/_app": [
       "static/chunks/webpack-4bf5637f5c57ba1c.js",
