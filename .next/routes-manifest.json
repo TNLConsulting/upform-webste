@@ -39,6 +39,12 @@
       "namedRegex": "^/Index(?:/)?$"
     },
     {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
       "page": "/toestellen",
       "regex": "^/toestellen(?:/)?$",
       "routeKeys": {},
