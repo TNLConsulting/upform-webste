@@ -20,7 +20,6 @@ const schedule = [
       "09u30 – 10u20 · Karolina",
       "10u30 – 11u20 · Karolina",
       "11u30 – 12u20 · Karolina",
-      "12u30 – 13u20 · Karolina",
     ],
   },
   {
