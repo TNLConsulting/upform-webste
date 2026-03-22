@@ -17,10 +17,10 @@ const schedule = [
   {
     day: "Woensdag",
     slots: [
+      "09u30 – 10u20 · Karolina",
+      "10u30 – 11u20 · Karolina",
+      "11u30 – 12u20 · Karolina",
       "12u30 – 13u20 · Karolina",
-      "13u30 – 14u20 · Karolina",
-      "14u30 – 15u20 · Karolina",
-      "15u30 – 16u20 · Karolina",
     ],
   },
   {
