@@ -86,42 +86,46 @@ const ScheduleSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {schedule.map((day, i) => (
-            <motion.div
-              key={day.day}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="border border-gold p-6"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.02)" }}
-            >
-              <h3 className="font-serif-display text-2xl text-primary mb-4">{day.day}</h3>
-              <div className="w-8 h-px line-gold mb-5" />
-              <ul className="space-y-2">
-                {day.slots.map((slot) => (
-                  <li
-                    key={`${slot.time}-${slot.instructor}`}
-                    className="font-sans-body text-xs text-muted-foreground leading-relaxed px-3 py-2 rounded"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto overflow-x-auto"
+        >
+          <table className="w-full border-collapse">
+            <thead>
+              <tr style={{ borderBottom: "2px solid #D4A574" }}>
+                <th className="font-serif-display text-lg text-primary text-left py-4 px-4">Dag</th>
+                <th className="font-serif-display text-lg text-primary text-left py-4 px-4">Uur</th>
+                <th className="font-serif-display text-lg text-primary text-left py-4 px-4">Lesgever</th>
+              </tr>
+            </thead>
+            <tbody>
+              {schedule.map((day) =>
+                day.slots.map((slot, idx) => (
+                  <tr
+                    key={`${day.day}-${slot.time}-${slot.instructor}`}
                     style={{
-                      backgroundColor: `${instructorColors[slot.instructor]}20`,
-                      borderLeft: `3px solid ${instructorColors[slot.instructor]}`,
+                      borderBottom: "1px solid rgba(212, 165, 116, 0.2)",
+                      backgroundColor: idx % 2 === 0 ? "rgba(255, 255, 255, 0.01)" : "transparent",
                     }}
                   >
-                    <span style={{ color: instructorColors[slot.instructor], fontWeight: "500" }}>
+                    <td className="font-sans-body text-sm text-muted-foreground py-3 px-4">
+                      {idx === 0 ? day.day : ""}
+                    </td>
+                    <td className="font-sans-body text-sm py-3 px-4" style={{ color: instructorColors[slot.instructor], fontWeight: "500" }}>
                       {slot.time}
-                    </span>
-                    <br />
-                    <span className="text-xs" style={{ color: instructorColors[slot.instructor] }}>
+                    </td>
+                    <td className="font-sans-body text-sm py-3 px-4" style={{ color: instructorColors[slot.instructor] }}>
                       {slot.instructor}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
-        </div>
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </motion.div>
       </div>
     </section>
   );
