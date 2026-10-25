@@ -7,17 +7,17 @@ export default function LandingPage() {
   return (
     <main className="min-h-screen bg-warm-cream flex flex-col">
       {/* Header */}
-      <div className="flex flex-col items-center justify-center px-2 md:px-4 py-6">
+      <div className="flex flex-col items-center justify-center px-2 md:px-4 py-3">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-4"
+          className="text-center mb-2"
         >
-          <h1 className="font-serif-display text-6xl md:text-7xl lg:text-8xl font-light tracking-widest text-black mb-4">
+          <h1 className="font-serif-display text-5xl md:text-6xl lg:text-7xl font-light tracking-widest text-black mb-2">
             UPFORM
           </h1>
-          <p className="font-sans-body text-sm md:text-base tracking-[0.25em] uppercase text-muted-foreground font-light">
+          <p className="font-sans-body text-xs md:text-sm tracking-[0.25em] uppercase text-muted-foreground font-light">
             Move with Purpose
           </p>
         </motion.div>
