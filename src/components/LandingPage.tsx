@@ -7,12 +7,12 @@ export default function LandingPage() {
   return (
     <main className="min-h-screen bg-warm-cream flex flex-col">
       {/* Header */}
-      <div className="flex-1 flex flex-col items-center justify-center px-2 md:px-4 py-12">
+      <div className="flex flex-col items-center justify-center px-2 md:px-4 py-6">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-8"
+          className="text-center mb-4"
         >
           <h1 className="font-serif-display text-6xl md:text-7xl lg:text-8xl font-light tracking-widest text-black mb-4">
             UPFORM
