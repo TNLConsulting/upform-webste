@@ -45,6 +45,12 @@
       "namedRegex": "^/privacy(?:/)?$"
     },
     {
+      "page": "/studio",
+      "regex": "^/studio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/studio(?:/)?$"
+    },
+    {
       "page": "/toestellen",
       "regex": "^/toestellen(?:/)?$",
       "routeKeys": {},
