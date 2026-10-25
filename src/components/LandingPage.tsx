@@ -7,14 +7,14 @@ export default function LandingPage() {
   return (
     <main className="min-h-screen bg-warm-cream flex flex-col">
       {/* Header */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-20">
+      <div className="flex-1 flex flex-col items-center justify-center px-2 md:px-4 py-12">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h1 className="font-serif-display text-6xl md:text-7xl font-light tracking-widest text-foreground mb-4">
+          <h1 className="font-serif-display text-6xl md:text-7xl lg:text-8xl font-light tracking-widest text-black mb-4">
             UPFORM
           </h1>
           <p className="font-sans-body text-sm md:text-base tracking-[0.25em] uppercase text-muted-foreground font-light">
@@ -23,7 +23,7 @@ export default function LandingPage() {
         </motion.div>
 
         {/* Two-Column Layout */}
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 px-2 md:px-0">
           {/* Studio Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function LandingPage() {
             className="group cursor-pointer"
           >
             <Link href="/studio" className="block h-full">
-              <div className="relative overflow-hidden rounded-sm h-96 md:h-[28rem] lg:h-[32rem]">
+              <div className="relative overflow-hidden rounded-sm h-96 md:h-[500px] lg:h-[600px]">
                 <Image
                   src="/images/landing-studio.jpg"
                   alt="Upform Studio — Reformer Pilates Classes"
@@ -73,7 +73,7 @@ export default function LandingPage() {
             className="group cursor-pointer"
           >
             <Link href="/toestellen" className="block h-full">
-              <div className="relative overflow-hidden rounded-sm h-96 md:h-[28rem] lg:h-[32rem]">
+              <div className="relative overflow-hidden rounded-sm h-96 md:h-[500px] lg:h-[600px]">
                 <Image
                   src="/images/landing-reformer.jpg"
                   alt="Upform Reformers — Premium Pilates Equipment"
@@ -109,7 +109,7 @@ export default function LandingPage() {
       </div>
 
       {/* Footer - minimal */}
-      <footer className="px-6 py-8 text-center border-t border-border/30">
+      <footer className="px-4 py-4 text-center border-t border-border/30">
         <p className="font-sans-body text-xs text-muted-foreground tracking-[0.1em]">
           © 2026 Upform. All rights reserved.
         </p>
