@@ -4,13 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "/#home" },
-  { label: "Over Ons", href: "/#about" },
-  { label: "Lessen", href: "/#classes" },
-  { label: "Uurrooster", href: "/#schedule" },
-  { label: "Prijzen", href: "/#pricing" },
+  { label: "Home", href: "/studio#home" },
+  { label: "Over Ons", href: "/studio#about" },
+  { label: "Lessen", href: "/studio#classes" },
+  { label: "Uurrooster", href: "/studio#schedule" },
+  { label: "Prijzen", href: "/studio#pricing" },
   { label: "Toestellen", href: "/toestellen" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/studio#contact" },
 ];
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-gold"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="font-serif-display text-2xl tracking-[0.2em] text-primary">
+        <a href="/studio#home" className="font-serif-display text-2xl tracking-[0.2em] text-primary hover:opacity-80 transition-opacity">
           UPFORM
         </a>
 
